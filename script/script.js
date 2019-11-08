@@ -10,3 +10,21 @@ NOTE:
 quindi l’ex base ha: sia l’interazione dei dropdown (però sul click),
 sia l’impaginazione e grafica uguali al sito;
 prima di buttarvi su altri bonus, il primo bonus è: completare la navbar anche in ottica responsive con relativo hamburger menù.  */
+$(document).ready(function () { 
+
+$(".dropdown-global").click(function (){
+    var isVisible = $(this).find("div").hasClass("my_visible");
+    
+    $(".dropdown-global > div").removeClass("my_visible");
+    if (isVisible == false){
+        $(this).find("div").toggleClass("my_visible");
+    }
+    
+    
+})
+
+
+
+
+
+})
