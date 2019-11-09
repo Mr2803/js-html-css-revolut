@@ -45,7 +45,19 @@
   
 }
 
+.dropdown-global{
+    position:relative;
+}
+
+.dropdown-cont{
+ display:none;
+ position:absolute;
+ top:40px;
+ left:0;
+ box-shadow: -8px 7px 9px grey;
+}
 .active{
     display:block !important;
 }
+
 
