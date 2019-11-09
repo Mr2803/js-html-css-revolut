@@ -13,11 +13,14 @@ prima di buttarvi su altri bonus, il primo bonus è: completare la navbar anche 
 $(document).ready(function () { 
 
 $(".dropdown-global").click(function (){
-    var isVisible = $(this).find("div").hasClass("active");
+    var isVisible = $(this).find(".dropdown-cont").hasClass("active");
     
     $(".dropdown-global > .dropdown-cont").removeClass("active");
     if (isVisible == false){
-        $(this).find("div").toggleClass("active");
+        $(this).find(".dropdown-cont").toggleClass("active");
+        $(this).find("span").text("▲");
+    }else{
+        $(this).find("span").text("▼");
     }
     
     
