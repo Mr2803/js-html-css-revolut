@@ -17,19 +17,18 @@ $(".dropdown-global").click(function (){
     var isVisible = $(this).find(".dropdown-cont").hasClass("active");
     
     //rimuovo a prescindere a tutti la classe active per far si che non ci possa essere più di un dropdown per volta
-    $(".dropdown-global > .dropdown-cont").removeClass("active");
-
-    //effettuo un controllo , se è FALSO che la mia variabile ha classe active allora la aggiungo (insieme ad altri effetti)
-    if (isVisible == false){
-        $(this).css("color","black")
-        $(this).find(".dropdown-cont").toggleClass("active");
-        $(this).find("span").text("▲");
-    //altrimenti ... modifico solo gli effetti , non mi serve modificare la classe active perchè la rimuovo gia a prescindere a tutti
-    } else{
-        $(this).css("color", "#8b959e")
-        $(this).find("span").text("▼");
-    }
     
+    $(".dropdown-global > .dropdown-cont").removeClass("active");
+    $(this).css("color", "#8b959e")
+    $(this).find("span").text("▼");
+    //effettuo un controllo , se è FALSO che la mia variabile ha classe active allora la aggiungo la classe (insieme ad altri effetti)
+    if (isVisible == false){
+        $(this).find(".dropdown-cont").toggleClass("active");
+        $(this).css("color","black");
+        $(this).find("span").text("▲");
+
+ 
+    } 
     
 })
 

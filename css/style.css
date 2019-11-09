@@ -67,6 +67,10 @@
     
 }
 
+.color{
+    color:black !important;
+}
+
 .dropdown-cont ul.ul-drop-cont li{
     display: block;
     width: auto;
@@ -75,70 +79,53 @@
     margin-bottom: 1px;
   }
 
-  .dropdown-cont ul li:hover {
-    border : 2px solid rgb(189, 52, 39);
-    color:white;
+
+
+  .dropdown-cont ul li{
+    padding:10px;
+    animation-name: Toptobottom;
+    animation-duration: 400ms;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    opacity: 0;
+    
+  }
+  .dropdown-cont ul li:hover{
+    background : rgba(194, 193, 193, 0.6);
+    cursor:pointer;
+    color:black;
+    
   }
 
   .dropdown-cont ul li:nth-child(1) {
-    background-color: rgba(0,0,0,.8);
-    padding:10px;
-    animation-name: Toptobottom;
-    animation-duration: 400ms;
-    animation-delay: -150ms;
-    animation-timing-function: ease-in-out;
-    animation-fill-mode: forwards;
-    opacity: 0;
+     animation-delay: -150ms;
   }
   .dropdown-cont ul li:nth-child(2) {
-    background-color: rgba(0,0,0,.8);
-    padding:10px;
-    animation-name: Toptobottom;
-    animation-duration: 400ms;
-    animation-delay: 0ms;
-    animation-timing-function: ease-in-out;
-    animation-fill-mode: forwards;
-    opacity: 0;
+      animation-delay: 0ms;
   }
   .dropdown-cont ul li:nth-child(3) {
-    background-color: rgba(0,0,0,.8);
-    padding:10px;
-    animation-name: Toptobottom;
-    animation-duration: 400ms;
-    animation-delay: 150ms;
-    animation-timing-function: ease-in-out;
-    animation-fill-mode: forwards;
-    opacity: 0;
+      animation-delay: 150ms;
   }
   .dropdown-cont ul li:nth-child(4) {
-    background-color: rgba(0,0,0,.8);
-    padding:10px;
-    animation-name: Toptobottom;
-    animation-duration: 400ms;
-    animation-delay: 300ms;
-    animation-timing-function: ease-in-out;
-    animation-fill-mode: forwards;
-    opacity: 0;
+      animation-delay: 300ms;
   }
   .dropdown-cont ul li:nth-child(5) {
-    background-color: rgba(0,0,0,.8);
-    padding:10px;
-    animation-name: Toptobottom;
-    animation-duration: 400ms;
-    animation-delay: 450ms;
-    animation-timing-function: ease-in-out;
-    animation-fill-mode: forwards;
-    opacity: 0;
+      animation-delay: 450ms;
   }
   .dropdown-cont ul li:nth-child(6) {
-    background-color: rgba(0,0,0,.8);
-    padding:10px;
-    animation-name: Toptobottom;
-    animation-duration: 400ms;
-    animation-delay: 600ms;
-    animation-timing-function: ease-in-out;
-    animation-fill-mode: forwards;
-    opacity: 0;
+      animation-delay: 600ms;
+  }
+  .dropdown-cont ul li:nth-child(7) {
+      animation-delay: 750ms;
+  }
+  .dropdown-cont ul li:nth-child(8) {
+      animation-delay: 900ms;
+  }
+  .dropdown-cont ul li:nth-child(9) {
+      animation-delay: 1050ms;
+  }
+  .dropdown-cont ul li:nth-child(10) {
+      animation-delay: 1300ms;
   }
 
   @keyframes Toptobottom {
@@ -150,6 +137,16 @@
       opacity: 1;
       transform: rotateX(0deg);
     }
+  }
+
+  .dropdown-cont.mob{
+      width: 100vw;
+      display:none;
+      border:1px solid;
+      position:absolute;
+      left:auto;
+      top:34.17px;
+      right:0;
   }
 
 
