@@ -32,16 +32,16 @@
     margin-right: 30px;
     color:#8b959e;
 }
-.col-lg-8 ul li button{
+button{
   padding: 0.625em 1.5em;
   border-radius: 2em;
-  background-color: rgb(235, 0, 141);
+  background-color:rgb(235, 0, 141);
   color:white;
   border:0;
 }
-.col-lg-8 ul li button:hover{
+button:hover{
  
-  background-color: rgba(235, 0, 115,0.7);
+  background-color:rgba(235, 0, 115,0.7);
   
 }
 
@@ -139,22 +139,66 @@
     }
   }
 
-  .dropdown-cont-mob{
+  .mobile_nav-cont{
       width: 100vw;
       display:none;
       border:1px solid;
       position:absolute;
       left:auto;
-      top:34.17px;
-      right:-15px;
+      top:0;
+      right:0;
       color:#8b959e;
+      background:white;
+      padding:20px;
+      padding-top:30px;
   }
 
-  .dropdown-cont.mob ul li:nth-child(1),
-  .dropdown-cont.mob ul li:nth-child(2){
+
+  .mobile-nav-cont ul li{
+      margin-bottom:20px;
+  }
+
+  .mobile-nav-cont ul li:nth-child(1),
+  .mobile-nav-cont ul li:nth-child(2){
       text-transform: uppercase;
 }
-  .dropdown-cont.mob ul li:nth-child(2){
+  .mobile-nav-cont ul li:nth-child(2){
       border-bottom:1px solid lightgray
   }
 
+  .my_style-heigth{
+      min-height: 600px;
+  }
+
+  /* sezione bg header */
+  .iphone{
+      position:relative;
+      width:50%;
+  }
+
+  .iphone > img{
+   width:50%;
+  }
+
+  .cont-iphone{
+      width: 80%;
+      padding:30px;
+  }
+
+  .cont-iphone img{
+    position: absolute;
+    top: 50%;
+    left: 63%;
+    width: 45%;
+    transform: translate(-134%, -56%);
+  }
+
+.my_card img{
+  position: absolute;
+    top: 35%;
+    left: 25%;
+    width: 45%;
+    transform: translate(-134%, -56%);
+    transform: rotate(-243deg);
+    z-index: -1;
+}

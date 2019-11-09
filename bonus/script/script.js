@@ -35,6 +35,14 @@ $(".dropdown-global").click(function (){
     
 })
 
+    $(".fas.fa-bars").click(function(){
+        $(".mobile_nav-cont").addClass("active");
+    })
+
+    $(".close").click(function(){
+        $(".mobile_nav-cont").removeClass("active");
+    })
+
 
 
 
