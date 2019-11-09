@@ -202,3 +202,10 @@ button:hover{
     transform: rotate(-243deg);
     z-index: -1;
 }
+
+.sticky-test img{
+    position:sticky;
+    top:0;
+    width:40%;
+    
+}
