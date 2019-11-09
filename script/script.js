@@ -17,9 +17,11 @@ $(".dropdown-global").click(function (){
     
     $(".dropdown-global > .dropdown-cont").removeClass("active");
     if (isVisible == false){
+        $(this).css("color","black")
         $(this).find(".dropdown-cont").toggleClass("active");
         $(this).find("span").text("▲");
     }else{
+        $(this).css("color", "#8b959e")
         $(this).find("span").text("▼");
     }
     
