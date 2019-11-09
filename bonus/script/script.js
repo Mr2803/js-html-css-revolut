@@ -35,6 +35,8 @@ $(".dropdown-global").click(function (){
     
 })
 
+
+
     $(".fas.fa-bars").click(function(){
         $(".mobile_nav-cont").addClass("active");
     })
@@ -42,6 +44,25 @@ $(".dropdown-global").click(function (){
     $(".close").click(function(){
         $(".mobile_nav-cont").removeClass("active");
     })
+
+    $(".fas.fa-angle-right").click(nextImg);
+
+    function nextImg() {
+        var posizioneimg = $(".carousel_global img.active");
+        
+
+        posizioneimg.removeClass("active");
+
+        // se siamo all'ultima img dello slider, ritorna ad essere attiva la prima
+        if (posizioneimg.hasClass("last")) {
+            $(".carousel_global img.first").addClass("active");
+        } else {
+            //altrimenti passa semplicemente l'active alla prossima
+            posizioneimg.next("img").addClass("active");
+
+        }
+    }
+
 
 
 
