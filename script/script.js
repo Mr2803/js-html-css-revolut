@@ -25,7 +25,7 @@ $(".dropdown-global").click(function (){
         $(this).find(".dropdown-cont").toggleClass("active");
         $(this).find("span").text("▲");
     //altrimenti ... modifico solo gli effetti , non mi serve modificare la classe active perchè la rimuovo gia a prescindere a tutti
-    }else{
+    } else{
         $(this).css("color", "#8b959e")
         $(this).find("span").text("▼");
     }

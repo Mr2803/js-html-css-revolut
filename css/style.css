@@ -54,10 +54,102 @@
  position:absolute;
  top:40px;
  left:0;
- box-shadow: -8px 7px 9px grey;
+ box-shadow: -8px 7px 9px 10px grey;
+ padding: 10px;
+ width:200px;
+}
+.dropdown-cont ul li{
+ margin-bottom:30px;
+ margin-right:0;
 }
 .active{
     display:block !important;
+    
 }
+
+.dropdown-cont ul.ul-drop-cont li{
+    display: block;
+    width: auto;
+    border:2px solid white;
+    transform-origin: top left;
+    margin-bottom: 1px;
+  }
+
+  .dropdown-cont ul li:hover {
+    border : 2px solid rgb(189, 52, 39);
+    color:white;
+  }
+
+  .dropdown-cont ul li:nth-child(1) {
+    background-color: rgba(0,0,0,.8);
+    padding:10px;
+    animation-name: Toptobottom;
+    animation-duration: 400ms;
+    animation-delay: -150ms;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    opacity: 0;
+  }
+  .dropdown-cont ul li:nth-child(2) {
+    background-color: rgba(0,0,0,.8);
+    padding:10px;
+    animation-name: Toptobottom;
+    animation-duration: 400ms;
+    animation-delay: 0ms;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    opacity: 0;
+  }
+  .dropdown-cont ul li:nth-child(3) {
+    background-color: rgba(0,0,0,.8);
+    padding:10px;
+    animation-name: Toptobottom;
+    animation-duration: 400ms;
+    animation-delay: 150ms;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    opacity: 0;
+  }
+  .dropdown-cont ul li:nth-child(4) {
+    background-color: rgba(0,0,0,.8);
+    padding:10px;
+    animation-name: Toptobottom;
+    animation-duration: 400ms;
+    animation-delay: 300ms;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    opacity: 0;
+  }
+  .dropdown-cont ul li:nth-child(5) {
+    background-color: rgba(0,0,0,.8);
+    padding:10px;
+    animation-name: Toptobottom;
+    animation-duration: 400ms;
+    animation-delay: 450ms;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    opacity: 0;
+  }
+  .dropdown-cont ul li:nth-child(6) {
+    background-color: rgba(0,0,0,.8);
+    padding:10px;
+    animation-name: Toptobottom;
+    animation-duration: 400ms;
+    animation-delay: 600ms;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    opacity: 0;
+  }
+
+  @keyframes Toptobottom {
+    0% {
+      opacity: 0;
+      transform: rotateX(-90deg);
+    }
+    100% {
+      opacity: 1;
+      transform: rotateX(0deg);
+    }
+  }
 
 
