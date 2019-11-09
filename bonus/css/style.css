@@ -139,3 +139,22 @@
     }
   }
 
+  .dropdown-cont-mob{
+      width: 100vw;
+      display:none;
+      border:1px solid;
+      position:absolute;
+      left:auto;
+      top:34.17px;
+      right:-15px;
+      color:#8b959e;
+  }
+
+  .dropdown-cont.mob ul li:nth-child(1),
+  .dropdown-cont.mob ul li:nth-child(2){
+      text-transform: uppercase;
+}
+  .dropdown-cont.mob ul li:nth-child(2){
+      border-bottom:1px solid lightgray
+  }
+
