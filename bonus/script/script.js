@@ -47,47 +47,42 @@ $(".dropdown-global-mob").click(function (){
     //effettuo un controllo , se è FALSO che la mia variabile ha classe active allora la aggiungo la classe (insieme ad altri effetti)
     if (isVisible == false){
         $(this).find(".dropdown-cont-mob").toggleClass("active");
-       
-
- 
     } 
     
 })
 
 
+//funzioni per aprire e chiudere il toggle menu da mobile
+$(".fas.fa-bars").click(function(){
+    $(".mobile_nav-cont").addClass("active");
+})
 
-    //funzioni per aprire e chiudere il toggle menu da mobile
-    $(".fas.fa-bars").click(function(){
-        $(".mobile_nav-cont").addClass("active");
-    })
+$(".close").click(function(){
+    $(".mobile_nav-cont").removeClass("active");
+})
 
-    $(".close").click(function(){
-        $(".mobile_nav-cont").removeClass("active");
-    })
+//funzione per carousel automatico (loop infinito) (funzione ESTERNA)
+setInterval(nextImg,2000);
 
-    //funzione per carousel automatico (loop infinito)
-    setInterval(nextImg,2000);
+function nextImg() {
+    var posizioneimg = $(".carousel_global img.active");
+    
 
-    function nextImg() {
-        var posizioneimg = $(".carousel_global img.active");
-        
+    posizioneimg.removeClass("active");
 
-        posizioneimg.removeClass("active");
+    // se siamo all'ultima img dello slider, ritorna ad essere attiva la prima
+    if (posizioneimg.hasClass("last")) {
+        $(".carousel_global img.first").addClass("active");
+    } else {
+        //altrimenti passa semplicemente l'active alla prossima
+        posizioneimg.next("img").addClass("active");
 
-        // se siamo all'ultima img dello slider, ritorna ad essere attiva la prima
-        if (posizioneimg.hasClass("last")) {
-            $(".carousel_global img.first").addClass("active");
-        } else {
-            //altrimenti passa semplicemente l'active alla prossima
-            posizioneimg.next("img").addClass("active");
-
-        }
     }
+}
 
-    //TO DO : l'immagine cambia in base allo scroll
+//TO DO : l'immagine cambia in base allo scroll
 
-
-    //funzione per passare il background grigio da una colonna all'altra
+//funzione per passare il background grigio da una colonna all'altra
     $(".my_style-column").mouseenter(function(){
         //salvo una variabile che indica il possessore della classe my_bg
         var posizioneBg = $(".my_style-column.my_bg");
@@ -102,7 +97,7 @@ $(".dropdown-global-mob").click(function (){
             $(this).addClass("my_bg") 
         }
     })
-    
+
 
 
 })

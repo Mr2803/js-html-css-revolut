@@ -177,25 +177,47 @@ button:hover{
   .my_style-heigth{
       min-height: 600px;
   }
+    /* navbar mobile */
    .dropdown-global-mob{
       position:relative;
   }
 
   .dropdown-global-mob::after{
-      content:"▼";
-      position:absolute;
-      top:0;
-      right:0;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f107";
+    position:absolute;
+    top:0;
+    right:0;
+  }
+
+
+  .dropdown-global-mob{
+      font-weight: bold;
   }
 
   .dropdown-cont-mob{
       display:none;
   }
+  .dropdown-cont-mob ul li{
+      font-size: 15px;
+  }
+  .dropdown-cont-mob ul li{
+      font-size: 15px;
+  }
+  .dropdown-cont-mob ul li:first-child{
+      margin-top:35px
+  }
+  .dropdown-cont-mob ul li:last-child{
+      margin-bottom:35px
+  }
 
   .dropdown-cont-mob ul li{
+      font-weight: lighter;
       border:0 !important;
       text-transform: none !important;
   }
+  /* fine navbar mobile */
 
   /* sezione bg header */
   .iphone{
@@ -229,8 +251,6 @@ button:hover{
     transform: rotate(-243deg);
     z-index: -1;
 }
-
-
 
 .sticky-test img{
     position:sticky;
@@ -283,7 +303,7 @@ button:hover{
 }
 
 .my_margin{
-margin-top:150px;
+    margin-top:150px;
 }
 /*  BLOCCO PARALLASSE */
 
@@ -323,8 +343,11 @@ sup{
     color:#8b959e
 }
 .my_style-column ul li:before{
-    content:"✔️";
-    margin-right:10px;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: '\f00c';
+    color: #0075eb;
+    margin-right: 30px;
 }
 /* FINE BLOCCO PIANI SOTTOSCRIVIBILI */
 
