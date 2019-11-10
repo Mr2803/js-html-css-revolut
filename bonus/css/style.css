@@ -285,3 +285,45 @@ sup{
     content:"✔️";
     margin-right:10px;
 }
+
+/* footer */
+
+footer{
+background-color: rgb(243, 244, 245);
+color: rgb(139, 149, 158);
+margin-top:100px;
+padding:20px;
+}
+footer ul li {
+   margin-bottom:15px;
+   
+}
+
+footer ul li a{
+    text-decoration: none;
+    color:rgb(139, 149, 158);
+   
+}
+footer ul li a:hover{
+    text-decoration: none;
+    color:rgb(106, 110, 114)
+}
+
+footer ul li:first-child{
+   color:black;
+   text-transform: uppercase;
+}
+
+.my_style-p{
+    font-size: 12px;
+}
+
+.my_style-ul-footer li{
+    color:rgb(139, 149, 158) !important;
+    margin-right: 10px;
+    font-size: 13px;
+}
+
+.my_style-ul-footer li:hover{
+    color:rgb(106, 110, 114) !important;
+}

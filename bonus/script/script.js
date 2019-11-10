@@ -68,16 +68,16 @@ $(".dropdown-global").click(function (){
 
 
     //funzione per passare il background grigio da una colonna all'altra
-    $(".col-4").mouseenter(function(){
+    $(".my_style-column").mouseenter(function(){
         //salvo una variabile che indica il possessore della classe my_bg
-        var posizioneBg = $(".col-4.my_bg");
+        var posizioneBg = $(".my_style-column.my_bg");
         
         //rimuovo sull'azione (mouseenter) la classe my_bg
         posizioneBg.removeClass("my_bg")
         
         //pongo le condizioni , se i fratelli della mia selezione hanno la classe my_bg , allora la rimuovo
-        if($(this).next(".col-4").hasClass("my_bg")){
-            $(".col-4").removeClass("my_bg");
+        if ($(this).next(".my_style-column").hasClass("my_bg")){
+            $(".my_style-column").removeClass("my_bg");
         }else{ //altrimenti la aggiungo
             $(this).addClass("my_bg") 
         }
