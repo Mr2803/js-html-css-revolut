@@ -83,19 +83,17 @@ button:hover{
     border:2px solid white;
     transform-origin: top left;
     margin-bottom: 1px;
-  }
-
-
-
-  .dropdown-cont ul li{
-    padding:10px;
-    animation-name: Toptobottom;
-    animation-duration: 400ms;
-    animation-timing-function: ease-in-out;
-    animation-fill-mode: forwards;
-    opacity: 0;
-    
-  }
+}
+  
+.dropdown-cont ul li{
+   padding:10px;
+   animation-name: Toptobottom;
+   animation-duration: 400ms;
+   animation-timing-function: ease-in-out;
+   animation-fill-mode: forwards;
+   opacity: 0;
+   
+}
   .dropdown-cont ul li:hover{
     background : rgba(194, 193, 193, 0.6);
     cursor:pointer;
@@ -103,6 +101,7 @@ button:hover{
     
   }
 
+  /* ANIMAZIONE LI*/
   .dropdown-cont ul li:nth-child(1) {
      animation-delay: -150ms;
   }
@@ -160,8 +159,7 @@ button:hover{
       padding-top:30px;
       z-index: 999;
   }
-
-
+  
   .mobile_nav-cont ul li{
       margin-bottom:20px;
   }
@@ -173,9 +171,17 @@ button:hover{
   .mobile_nav-cont ul li:nth-child(2){
       border-bottom:1px solid lightgray
   }
-
-  .my_style-heigth{
-      min-height: 600px;
+  
+  .my_style-personal{
+     margin-top:50px;
+  }
+  .my_style-personal h2{
+      font-size: 3rem;
+      width: 70%;
+  }
+  .my_style-personal p{
+      
+      width: 60%;
   }
     /* navbar mobile */
    .dropdown-global-mob{
@@ -190,8 +196,7 @@ button:hover{
     top:0;
     right:0;
   }
-
-
+  
   .dropdown-global-mob{
       font-weight: bold;
   }
@@ -220,48 +225,50 @@ button:hover{
   /* fine navbar mobile */
 
   /* sezione bg header */
-  .iphone{
-      position:relative;
-      width:50%;
-  }
-
-  .iphone > img{
-    width: 70%;
-  }
-
-  .cont-iphone{
-      width: 80%;
-      padding:30px;
-  }
-
-  .cont-iphone img{
-    position: absolute;
-    top: 50%;
-    left: 85%;
-    width: 60%;
-    transform: translate(-134%, -56%);
-  }
-
-.my_card img{
-  position: absolute;
-    top: 35%;
-    left: 25%;
-    width: 70%;
-    transform: translate(-134%, -56%);
-    transform: rotate(-243deg);
-    z-index: -1;
+.iphone{
+   position:relative;
+   width:50%;
 }
 
+.iphone > img{
+   width: 70%;
+}
+
+.cont-iphone{
+   width: 80%;
+   padding:30px;
+}
+
+.cont-iphone img{
+   position: absolute;
+   top: 50%;
+   left: 85%;
+   width: 60%;
+   transform: translate(-134%, -56%);
+}
+
+.my_card img{
+   position: absolute;
+   top: 35%;
+   left: 25%;
+   width: 70%;
+   transform: translate(-134%, -56%);
+   transform: rotate(-243deg);
+   z-index: -1;
+}
+
+
+/* FINE BLOCCO HEADER (NAVBAR + SEZIONEBG) */
+
+
+/* BLOCCO PARALLASSE */
 .sticky-test img{
     position:sticky;
     top:0;
     width:40%;
     display:none;
 }
-/* FINE BLOCCO HEADER (NAVBAR + SEZIONEBG) */
 
-
-/* BLOCCO PARALLASSE */
 .section1,
 .section2,
 .section3,
