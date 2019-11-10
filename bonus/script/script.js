@@ -45,7 +45,8 @@ $(".dropdown-global").click(function (){
         $(".mobile_nav-cont").removeClass("active");
     })
 
-    $(".fas.fa-angle-right").click(nextImg);
+    //funzione per carousel automatico (loop infinito)
+    setInterval(nextImg,2000);
 
     function nextImg() {
         var posizioneimg = $(".carousel_global img.active");
@@ -63,7 +64,7 @@ $(".dropdown-global").click(function (){
         }
     }
 
-
+    //TO DO : l'immagine cambia in base allo scroll
 
 
 
