@@ -29,8 +29,6 @@ $(".dropdown-global").click(function (){
         $(this).find(".dropdown-cont").toggleClass("active");
         $(this).css("color","black");
         $(this).find("span").html("<i class=\"fas fa-angle-up\"></i>");
-
- 
     } 
     
 })
@@ -41,7 +39,6 @@ $(".dropdown-global-mob").click(function (){
     var isVisible = $(this).find(".dropdown-cont-mob").hasClass("active");
     
     //rimuovo a prescindere a tutti la classe active per far si che non ci possa essere più di un dropdown per volta
-    
     $(".dropdown-global-mob > .dropdown-cont-mob").removeClass("active");
     
     //effettuo un controllo , se è FALSO che la mia variabile ha classe active allora la aggiungo la classe (insieme ad altri effetti)
@@ -50,7 +47,6 @@ $(".dropdown-global-mob").click(function (){
     } 
     
 })
-
 
 //funzioni per aprire e chiudere il toggle menu da mobile
 $(".fas.fa-bars").click(function(){
@@ -66,10 +62,7 @@ setInterval(nextImg,2000);
 
 function nextImg() {
     var posizioneimg = $(".carousel_global img.active");
-    
-
     posizioneimg.removeClass("active");
-
     // se siamo all'ultima img dello slider, ritorna ad essere attiva la prima
     if (posizioneimg.hasClass("last")) {
         $(".carousel_global img.first").addClass("active");
@@ -83,21 +76,19 @@ function nextImg() {
 //TO DO : l'immagine cambia in base allo scroll
 
 //funzione per passare il background grigio da una colonna all'altra
-    $(".my_style-column").mouseenter(function(){
-        //salvo una variabile che indica il possessore della classe my_bg
-        var posizioneBg = $(".my_style-column.my_bg");
-        
-        //rimuovo sull'azione (mouseenter) la classe my_bg
-        posizioneBg.removeClass("my_bg")
-        
-        //pongo le condizioni , se i fratelli della mia selezione hanno la classe my_bg , allora la rimuovo
-        if ($(this).siblings(".my_style-column").hasClass("my_bg")){
-            $(".my_style-column").removeClass("my_bg");
-        }else{ //altrimenti la aggiungo
-            $(this).addClass("my_bg") 
-        }
-    })
-
-
+$(".my_style-column").mouseenter(function(){
+   //salvo una variabile che indica il possessore della classe my_bg
+   var posizioneBg = $(".my_style-column.my_bg");
+   
+   //rimuovo sull'azione (mouseenter) la classe my_bg
+   posizioneBg.removeClass("my_bg")
+   
+   //pongo le condizioni , se i fratelli della mia selezione hanno la classe my_bg , allora la rimuovo
+   if ($(this).siblings(".my_style-column").hasClass("my_bg")){
+      $(".my_style-column").removeClass("my_bg");
+   }else{ //altrimenti la aggiungo
+      $(this).addClass("my_bg") 
+   }
+})
 
 })

@@ -329,10 +329,6 @@ button:hover{
     display:none;
 }
 
-.visible{
-    display:block;
-}
-
 sub,
 sup{
     font-size: 30px;
