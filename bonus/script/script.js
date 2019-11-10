@@ -14,7 +14,7 @@ prima di buttarvi su altri bonus, il primo bonus è: completare la navbar anche 
 
 $(document).ready(function () { 
 
-//FUNZIONE PER FAR APPARIRE E SCOMPARIRE IL DROPDOWN UNO PER VOLTA
+//FUNZIONE PER FAR APPARIRE E SCOMPARIRE IL DROPDOWN UNO PER VOLTA LG-VERSION
 $(".dropdown-global").click(function (){
     //salvo una variabile che TROVA il contenitore del dropdown e CONTROLLA se ha la classe active
     var isVisible = $(this).find(".dropdown-cont").hasClass("active");
@@ -34,6 +34,26 @@ $(".dropdown-global").click(function (){
     } 
     
 })
+
+//FUNZIONE PER FAR APPARIRE E SCOMPARIRE IL DROPDOWN DA MOBILE
+$(".dropdown-global-mob").click(function (){
+    //salvo una variabile che TROVA il contenitore del dropdown e CONTROLLA se ha la classe active
+    var isVisible = $(this).find(".dropdown-cont-mob").hasClass("active");
+    
+    //rimuovo a prescindere a tutti la classe active per far si che non ci possa essere più di un dropdown per volta
+    
+    $(".dropdown-global-mob > .dropdown-cont-mob").removeClass("active");
+    
+    //effettuo un controllo , se è FALSO che la mia variabile ha classe active allora la aggiungo la classe (insieme ad altri effetti)
+    if (isVisible == false){
+        $(this).find(".dropdown-cont-mob").toggleClass("active");
+       
+
+ 
+    } 
+    
+})
+
 
 
     //funzioni per aprire e chiudere il toggle menu da mobile
