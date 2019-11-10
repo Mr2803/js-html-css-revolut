@@ -11,10 +11,10 @@ quindi l’ex base ha: sia l’interazione dei dropdown (però sul click),
 sia l’impaginazione e grafica uguali al sito;
 prima di buttarvi su altri bonus, il primo bonus è: completare la navbar anche in ottica responsive con relativo hamburger menù.  */
 //@ts-check
-// @ts-ignore
+
 $(document).ready(function () { 
 
-// @ts-ignore
+//funzione per far apparire e scomparire il dropdown uno per volta
 $(".dropdown-global").click(function (){
     //salvo una variabile che TROVA il contenitore del dropdown e CONTROLLA se ha la classe active
     var isVisible = $(this).find(".dropdown-cont").hasClass("active");
@@ -36,7 +36,7 @@ $(".dropdown-global").click(function (){
 })
 
 
-
+    //funzioni per aprire e chiudere il toggle menu da mobile
     $(".fas.fa-bars").click(function(){
         $(".mobile_nav-cont").addClass("active");
     })
@@ -71,12 +71,12 @@ $(".dropdown-global").click(function (){
     $(".col-4").mouseenter(function(){
         //salvo una variabile che indica il possessore della classe my_bg
         var posizioneBg = $(".col-4.my_bg");
-
+        
         //rimuovo sull'azione (mouseenter) la classe my_bg
         posizioneBg.removeClass("my_bg")
         
         //pongo le condizioni , se i fratelli della mia selezione hanno la classe my_bg , allora la rimuovo
-        if($(this).siblings(".col-4").hasClass("my_bg")){
+        if($(this).next(".col-4").hasClass("my_bg")){
             $(".col-4").removeClass("my_bg");
         }else{ //altrimenti la aggiungo
             $(this).addClass("my_bg") 

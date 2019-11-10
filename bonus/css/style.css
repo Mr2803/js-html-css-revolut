@@ -215,7 +215,7 @@ button:hover{
 }
 
 
-
+/* blocco parallasse */
 .section1,
 .section2,
 .section3,
@@ -252,7 +252,36 @@ button:hover{
 .my_margin{
 margin-top:150px;
 }
+/* fine blocco parallasse */
+
+
+/* blocco piani sottoscrivibili */
 
 .my_bg{
-    background:lightgrey;
+    background:rgba(156, 156, 156, 0.356);
+}
+
+.my_style-column h2{
+    text-align: center;
+    font-size: 17px;
+    letter-spacing: 0.3em;
+    font-weight: bold;
+}
+.my_style-column p{
+    text-align: center;
+    font-size: 80px;
+}
+
+sub,
+sup{
+    font-size: 30px;
+}
+
+.my_style-column ul li{
+    margin-bottom:10px;
+    color:#8b959e
+}
+.my_style-column ul li:before{
+    content:"✔️";
+    margin-right:10px;
 }
