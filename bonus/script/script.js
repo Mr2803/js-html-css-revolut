@@ -67,6 +67,22 @@ $(".dropdown-global").click(function (){
     //TO DO : l'immagine cambia in base allo scroll
 
 
+    //funzione per passare il background grigio da una colonna all'altra
+    $(".col-4").mouseenter(function(){
+        //salvo una variabile che indica il possessore della classe my_bg
+        var posizioneBg = $(".col-4.my_bg");
+
+        //rimuovo sull'azione (mouseenter) la classe my_bg
+        posizioneBg.removeClass("my_bg")
+        
+        //pongo le condizioni , se i fratelli della mia selezione hanno la classe my_bg , allora la rimuovo
+        if($(this).siblings(".col-4").hasClass("my_bg")){
+            $(".col-4").removeClass("my_bg");
+        }else{ //altrimenti la aggiungo
+            $(this).addClass("my_bg") 
+        }
+    })
+
 
 
 })
