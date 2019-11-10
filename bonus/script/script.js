@@ -14,7 +14,7 @@ prima di buttarvi su altri bonus, il primo bonus è: completare la navbar anche 
 
 $(document).ready(function () { 
 
-//funzione per far apparire e scomparire il dropdown uno per volta
+//FUNZIONE PER FAR APPARIRE E SCOMPARIRE IL DROPDOWN UNO PER VOLTA
 $(".dropdown-global").click(function (){
     //salvo una variabile che TROVA il contenitore del dropdown e CONTROLLA se ha la classe active
     var isVisible = $(this).find(".dropdown-cont").hasClass("active");
@@ -76,13 +76,13 @@ $(".dropdown-global").click(function (){
         posizioneBg.removeClass("my_bg")
         
         //pongo le condizioni , se i fratelli della mia selezione hanno la classe my_bg , allora la rimuovo
-        if ($(this).next(".my_style-column").hasClass("my_bg")){
+        if ($(this).siblings(".my_style-column").hasClass("my_bg")){
             $(".my_style-column").removeClass("my_bg");
         }else{ //altrimenti la aggiungo
             $(this).addClass("my_bg") 
         }
     })
-
+    
 
 
 })

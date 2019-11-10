@@ -13,6 +13,7 @@
     <title>Copia Revolut</title>
 </head>
 <body>
+    <!-- INIZIO BLOCCO HEADER -->
     <header>
         <div class="container-fluid">
             <div class="row  mt-2">
@@ -26,9 +27,7 @@
                 </div>
                 <div class="col-6 d-flex justify-content-end d-block d-lg-none align-items-center ">
                     <div class="mobile-nav-global">
-                        <i class="fas fa-bars">
-    
-                        </i>
+                        <i class="fas fa-bars"></i>
                     <div class="mobile_nav-cont">
                         <a href="#" class="close">
                             <i class="fas fa-times"></i>
@@ -38,22 +37,70 @@
                                 <li>Business</li>
                                 <li class="d-flex justify-content-between">
                                     Pricing
-                                    <a href="">▼</a>
                                 </li>
-                                <li class="d-flex justify-content-between">Account
-                                    <a href="">▼</a>
+                                <li class="d-flex justify-content-between  dropdown-global">Account
+                                    <div class="dropdown-cont">
+                                        <ul class="list-unstyled">
+                                            <li>Standard</li>
+                                            <li>Premium</li>
+                                            <li>Metal</li>
+                                        </ul>
+                                    
+                                    </div>
+                                    <span>▼</span>
+                                    
                                 </li>
-                                <li class="d-flex justify-content-between">Products
-                                    <a href="">▼</a>
+                                <li class="d-flex justify-content-between dropdown-global">Products
+                                    <div class="dropdown-cont">
+                                    <ul class="list-unstyled">
+                                        <li>Money Transfer</li>
+                                        <li>Vaults</li>
+                                        <li>Budgeting</li>
+                                        <li>Perksbeta</li>
+                                        <li>Cryptocurrency</li>
+                                        <li>Mobile Phone Insurance</li>
+                                        <li>Overseas Medical Insurance</li>
+                                        <li>Open Banking API</li>
+                                        <li>Apple Pay</li>
+                                        <li>Donations</li>
+                                    </ul>
+                                    </div>
+                                    <span>▼</span>
                                 </li>
-                                <li class="d-flex justify-content-between">Company
-                                    <a href="">▼</a>
+                                <li class="d-flex justify-content-between dropdown-global">Company
+                                    <div class="dropdown-cont">
+                                        <ul class="list-unstyled">
+                                            <li>About</li>
+                                            <li>Money Transfer</li>
+                                            <li>Blog</li>
+                                            <li>Careers</li>
+                                            <li>Affiliates</li>
+                                            <li>Influencers</li>
+                                            <li>Contact</li>
+                                        </ul>
+                                    
+                                    </div>
+                                    <span>▼</span>
                                 </li>
-                                <li class="d-flex justify-content-between">Help
-                                    <a href="">▼</a>
+                                <li class="d-flex justify-content-between dropdown-global">Help
+                                    <div class="dropdown-cont">
+                                        <ul class="list-unstyled">
+                                            <li>Community</li>
+                                            <li>Help centre</li>
+                                            <li>Security</li>
+                                            <li>System Status</li>
+                                        </ul>
+                                    </div>
+                                    <span>▼</span>
                                 </li>
-                                <li class="d-flex justify-content-between">En
-                                    <a href="">▼</a>
+                                <li class="d-flex justify-content-between dropdown-global">En
+                                    <div class="dropdown-cont">
+                                        <ul class="list-unstyled">
+                                            <li>Italiano</li>
+                                            <li>Inglese</li>
+                                        </ul>
+                                    </div>
+                                    <span>▼</span>
                                 </li>
                             </ul>
                         </div>
@@ -134,7 +181,6 @@
             <div class="row d-flex justify-content-center align-items-center">
                 <div class="col-6 ">
                     <div class="text-left">
-
                         <h2>Un conto radicalmente migliore</h2>
                         <p>Quando fai spese o trasferisci denaro all'estero, le altre banche ti addebitano un costo. Noi non lo facciamo. Ed è
                         proprio per questo che 8M+ di persone hanno scelto Revolut</p>
@@ -265,9 +311,7 @@
             
         </div><!-- chiusura container fluid -->
 
-        <div class="ghost">
-
-        </div>
+        <div class="ghost"></div>
   
         <!--  SEZIONE MAPPAMONDO -->
      <div class="container my_margin mt-5">
@@ -282,13 +326,13 @@
              </div>
          </div>
      </div>
-    <!--  SEZIONE MAPPAMONDO -->
+    <!--  FINE SEZIONE MAPPAMONDO -->
     <div class="ghost"></div>
 
-    <!-- sezione piani sottoscrivibili -->
+    <!-- SEZIONE PIANI SOTTOSCRIVIBILI -->
     <div class="container-fluid ">
         <div class="row">
-            <div class="col-4 my_bg my_style-column">
+            <div class="col-lg-4 my_bg my_style-column">
                 <h2>STANDARD</h2>
                 <p><sup>€</sup> 0 <sub>/m</sub> </p>
                 <ul class="list-unstyled">
@@ -297,10 +341,11 @@
                     <li>Puoi fare spese in oltre 150 valute al tasso di cambio interbancario</li>
                     <li>Cambio senza commissioni nascoste in 30 valute fiat fino a €6,000 al mese</li>
                     <li>Prelievi da bancomat senza commissioni fino a €200 al mese.</li>
+                    
                 </ul>
-             
+            <button class="visible">test</button>
             </div>
-            <div class="col-4 my_style-column">
+            <div class="col-lg-4 my_style-column">
                 <h2>PREMIUM</h2>
                 <p><sup>€</sup> 7.99 <sub>/m</sub> </p>
                 <ul class="list-unstyled">
@@ -318,10 +363,11 @@
                     <li>Carte virtuali usa e getta</li>
                     <li>Accesso tramite Pass LoungeKey</li>
                 </ul>
+                <button >test</button>
             
 
             </div>
-            <div class="col-4 my_style-column">
+            <div class="col-lg-4 my_style-column">
                 <h2 class>METAL</h2>
                 <p><sup>€</sup> 13.99 <sub>/m</sub> </p>
                 <ul class="list-unstyled">
@@ -341,16 +387,18 @@
                     <li>Fino allo 0,1% di Cashback in Europa e fino al 1% fuori dall'Europa, su ogni pagamento fatto con carta</li>
                     <li>Ottieni un concierge per gestire meglio il tuo stile di vita</li>
                 </ul>
+                <button>test</button>
             </div>
         </div><!-- chiusura row sezione -->
     </div><!-- chiusura container sezione -->
+    <!-- FINE SEZIONE PIANI SOTTOSCRIVIBILI -->
 
     <footer>
         <div class="container-fluid">
             <div class="row">
                 <div class="col-4">
                     <img src="" alt="">
-                    <span>Personale</span>
+                    <span class="mr-4">Personale</span>
                     <span>Business</span>
                 </div>
                 <div class="col-8 d-flex justify-content-between">
