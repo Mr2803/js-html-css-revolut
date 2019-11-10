@@ -23,12 +23,12 @@ $(".dropdown-global").click(function (){
     
     $(".dropdown-global > .dropdown-cont").removeClass("active");
     $(this).css("color", "#8b959e")
-    $(this).find("span").text("▼");
+    $(this).find("span").html("<i class=\"fas fa-angle-down\"></i>");
     //effettuo un controllo , se è FALSO che la mia variabile ha classe active allora la aggiungo la classe (insieme ad altri effetti)
     if (isVisible == false){
         $(this).find(".dropdown-cont").toggleClass("active");
         $(this).css("color","black");
-        $(this).find("span").text("▲");
+        $(this).find("span").html("<i class=\"fas fa-angle-up\"></i>");
 
  
     } 
