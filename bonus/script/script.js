@@ -22,7 +22,7 @@ $(".disability").click(function(){
 
 //FUNZIONE PER FAR APPARIRE E SCOMPARIRE IL DROPDOWN UNO PER VOLTA LG-VERSION
 $(".dropdown-global").click(function (){
-    //salvo una variabile che TROVA il contenitore del dropdown e CONTROLLA se ha la classe active
+    //salvo una variabile che TROVA all'interno del padre il contenitore del dropdown e CONTROLLA se ha la classe active
     var isVisible = $(this).find(".dropdown-cont").hasClass("active");
     
     //rimuovo a prescindere a tutti la classe active per far si che non ci possa essere più di un dropdown per volta
@@ -31,6 +31,7 @@ $(".dropdown-global").click(function (){
  /*    $(this).css("color", "#8b959e")
     $(this).find("span").html("<i class=\"fas fa-angle-down\"></i>"); */
     //effettuo un controllo , se è FALSO che la mia variabile ha classe active allora aggiungo la classe (insieme ad altri effetti)
+    
     if (isVisible == false){
         $(this).find(".dropdown-cont").toggleClass("active");
         /* $(this).css("color","black");
@@ -41,7 +42,7 @@ $(".dropdown-global").click(function (){
 
 //FUNZIONE PER FAR APPARIRE E SCOMPARIRE IL DROPDOWN DA MOBILE
 $(".dropdown-global-mob").click(function (){
-    //salvo una variabile che TROVA il contenitore del dropdown e CONTROLLA se ha la classe active
+    //salvo una variabile che TROVA all'interno del padre il contenitore del dropdown e CONTROLLA se ha la classe active
     var isVisible = $(this).find(".dropdown-cont-mob").hasClass("active");
     
     //rimuovo a prescindere a tutti la classe active per far si che non ci possa essere più di un dropdown per volta
@@ -79,7 +80,7 @@ function nextImg() {
     }
 }
 
-//TO DO : l'immagine cambia in base allo scroll
+//DA FARE("credici") : l'immagine cambia in base allo scroll
 
 //funzione per passare il background grigio da una colonna all'altra
 $(".my_style-column").mouseenter(function(){
