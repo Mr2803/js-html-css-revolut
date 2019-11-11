@@ -16,6 +16,23 @@
 }
 /* FINE REGOLE GENERALI */
 
+/* COOKIES */
+.cookies{
+    background:#f3f4f5;
+    padding:20px;
+}
+
+.disability{
+    border:1px solid rgb(235, 0, 141);
+    color:rgb(235, 0, 141);
+    background:#f3f4f5;
+
+}
+
+.disability:hover{
+    color:#f3f4f5;
+}
+
 /* BLOCCO HEADER (NAVBAR + SEZIONEBG) */
 .logo{
     width: 30%;

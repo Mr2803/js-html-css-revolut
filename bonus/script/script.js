@@ -14,6 +14,12 @@ prima di buttarvi su altri bonus, il primo bonus è: completare la navbar anche 
 
 $(document).ready(function () { 
 
+/* Funzione per i Cookies */
+
+$(".disability").click(function(){
+    $(".cookies").fadeOut();
+})
+
 //FUNZIONE PER FAR APPARIRE E SCOMPARIRE IL DROPDOWN UNO PER VOLTA LG-VERSION
 $(".dropdown-global").click(function (){
     //salvo una variabile che TROVA il contenitore del dropdown e CONTROLLA se ha la classe active
@@ -22,13 +28,13 @@ $(".dropdown-global").click(function (){
     //rimuovo a prescindere a tutti la classe active per far si che non ci possa essere più di un dropdown per volta
     
     $(".dropdown-global > .dropdown-cont").removeClass("active");
-    $(this).css("color", "#8b959e")
-    $(this).find("span").html("<i class=\"fas fa-angle-down\"></i>");
+ /*    $(this).css("color", "#8b959e")
+    $(this).find("span").html("<i class=\"fas fa-angle-down\"></i>"); */
     //effettuo un controllo , se è FALSO che la mia variabile ha classe active allora aggiungo la classe (insieme ad altri effetti)
     if (isVisible == false){
         $(this).find(".dropdown-cont").toggleClass("active");
-        $(this).css("color","black");
-        $(this).find("span").html("<i class=\"fas fa-angle-up\"></i>");
+        /* $(this).css("color","black");
+        $(this).find("span").html("<i class=\"fas fa-angle-up\"></i>"); */
     } 
     
 })
